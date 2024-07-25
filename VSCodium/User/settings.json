@@ -1,0 +1,15 @@
+{
+  "editor.linkedEditing": true,
+  "editor.fontFamily": "'Fira Code', 'monospace', monospace",
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "svelte.enable-ts-plugin": true,
+  "git.openRepositoryInParentFolders": "never",
+  "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#ffe50a",
+    "editorBracketHighlight.foreground2": "#1D99F3",
+    "editorBracketHighlight.foreground3": "#e029b3",
+    "editorBracketHighlight.foreground4": "#439d15"
+  },
+  "workbench.colorTheme": "new-custom"
+}

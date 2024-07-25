@@ -1,0 +1,21 @@
+{
+  "name": "new-custom",
+  "displayName": "new-custom",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "new-custom",
+        "uiTheme": "vs-dark",
+        "path": "./themes/new-custom-color-theme.json"
+      }
+    ]
+  }
+}
