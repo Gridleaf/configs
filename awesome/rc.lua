@@ -774,7 +774,8 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 -- Autostart
+awful.spawn.with_shell("picom")
 awful.spawn.with_shell("xset -dpms")
 awful.spawn.with_shell("xset s off")
-awful.spawn.with_shell("picom")
-awful.spawn.with_shell("feh --bg-fill ~/Pictures/abstract-spiral.png")
+--awful.spawn.with_shell("bash /usr/local/bin/monitor-startup-config.sh")
+awful.spawn.with_shell("bash /usr/local/bin/wallpaper_set.sh")
