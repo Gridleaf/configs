@@ -473,6 +473,10 @@ globalkeys = awful.util.table.join(
               {description = "increase master width factor", group = "layout"}),
     awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)          end,
               {description = "decrease master width factor", group = "layout"}),
+    awful.key({ modkey,	}, "Down",	function () awful.client.incwfact(-0.05)	end,
+    	      {description = "decrease vertical window height", group = "layout"}),
+    awful.key({ modkey,	}, "Up",	function () awful.client.incwfact(0.05)	end,
+    	      {description = "increase vertical window height", group = "layour"}),
     awful.key({ modkey, "Shift"   }, "h",     function () awful.tag.incnmaster( 1, nil, true) end,
               {description = "increase the number of master clients", group = "layout"}),
     awful.key({ modkey, "Shift"   }, "l",     function () awful.tag.incnmaster(-1, nil, true) end,
@@ -779,3 +783,4 @@ awful.spawn.with_shell("xset -dpms")
 awful.spawn.with_shell("xset s off")
 --awful.spawn.with_shell("bash /usr/local/bin/monitor-startup-config.sh")
 awful.spawn.with_shell("bash /usr/local/bin/wallpaper_set.sh")
+--awful.spwan.with_shell("picom")
